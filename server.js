@@ -9,7 +9,7 @@ var path = require('path');
 var webroot = path.resolve(__dirname, 'static');
 
 var settings = {
-  port: 5005,
+  port: process.env.PORT || 5005,
   cacheDir: './cache',
   webroot: webroot
 };
